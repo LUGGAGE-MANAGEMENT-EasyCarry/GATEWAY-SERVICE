@@ -24,6 +24,16 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.cloud:spring-cloud-starter-gateway")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.2")
+	// https://mvnrepository.com/artifact/org.springframework/spring-webflux
+	implementation("org.springframework:spring-webflux:6.0.10")
+	implementation("io.jsonwebtoken:jjwt-api:0.10.2")
+// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-impl
+	runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
+// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-jackson
+	runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.3")
+
+
 }
 
 dependencyManagement {
