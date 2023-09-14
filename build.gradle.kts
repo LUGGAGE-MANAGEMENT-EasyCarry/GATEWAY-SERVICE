@@ -22,7 +22,8 @@ extra["springCloudVersion"] = "2022.0.4"
 
 dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.springframework.cloud:spring-cloud-starter-gateway")
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway
+	implementation("org.springframework.cloud:spring-cloud-starter-gateway:3.0.6")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.2")
 	// https://mvnrepository.com/artifact/org.springframework/spring-webflux
